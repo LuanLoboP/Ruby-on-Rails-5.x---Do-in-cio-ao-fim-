@@ -74,18 +74,47 @@ saida:
 -   Olá Luan
 -   "Luan\n" 
 
--> Nota-se este "/n", ele é o enter do teclado que foi pego
+-> Nota-se este "\n", ele é o enter do teclado que foi pego
 
-# Comandos
-- Entrar em uma pasta -> cd praticando
+-> O Código de formatação \n indica "new line", ou seja, adiciona uma nova linha, ou, como dizem "Quebra de linha".
+-> O .chomp é um método que remove o código de formatação \n do elemento ao qual foi aplicado. 
+
+EX:
+    puts "Qual seu nome ?"
+    name = gets.chomp
+    puts "Olá " + name 
+    puts nome.inspect
+    
+saida:
+    Qual seu nome ?
+-   Luan
+-   Olá Luan
+-   "Luan" 
+
+-> Coerção, cast ou casting é o procedimento que fazemos para "transformar" o conteúdo de uma variável/entrada em outro tipo.
+-> Não modificamos a variável, apenas "interpretamos" ela como um tipo que queremos
+
+EX:
+    gets.to_i ( Int )
+    x = "2.5"
+    x.to_f ( Float )
 
 
-# Aulas
+## Condicionais (if, unless, case)
+[Condicionais](/praticando/03.rb)
+
+-> if
+    -> 
+    
+-> unless
+-> case
+
 ## Comandos e informações
 [pry](/pry.txt)
 [IRB](/IRB.txt)
 [comandos_rvm](/comandos_rvm.txt)
 
-### Aulas
+## Aulas
 [Aula 01-puts](praticando/01.rb)
 [Aula 02-variáveis](praticando/02.rb)
+[Aula 03-Inserção e Coerção de dados](praticando/03.rb)

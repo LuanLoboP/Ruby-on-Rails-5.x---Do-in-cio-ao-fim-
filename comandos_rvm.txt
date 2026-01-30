@@ -44,6 +44,12 @@ rvm docs             # abre a documentação do RVM
 rvm requirements     # mostra dependências necessárias para instalar Ruby
 rvm info             # informações detalhadas da instalação do Ruby
 
+6. COMANDOS TERMINAL
+----------------
+
+- Entrar em uma pasta -> cd praticando
+
+
 DICAS RÁPIDAS
 -------------
 - Sempre abra um terminal com login shell (source ~/.bashrc) para ter RVM disponível.
