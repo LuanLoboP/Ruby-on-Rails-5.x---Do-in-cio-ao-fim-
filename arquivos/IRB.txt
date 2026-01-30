@@ -1,4 +1,4 @@
-- IRB = REPL, prompt para escriver o algoritimo da linguagem
+- IRB = REPL, prompt para escrever o algoritimo da linguagem
 
 - CTRL + L = Limpa linha
 
