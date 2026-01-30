@@ -22,35 +22,6 @@ EX:
     2.7.2 :002 > a.class
         => Integer
 
-
-## Versões Ruby 2.3 vs 2.4+
-
--> 2.3
-    Fixnum representa os inteiros
-    Bignum representa os números "inteiros gigantes"
-
--> 2.4+
-    Interge representa todos os números inteiros
-
-EX:
--> Underline para ver quantos zeros
--> Versão 2.7.2
-    2.7.2 :001 > w = 1_000_000 
-     => 1000000 
-    2.7.2 :002 > w.class
-        => Integer 
-    
--> Versão 2.3.7
-    2.3.7 :01 > x = 1
-         => 1 
-    2.3.7 :02 > x.class
-        => Fixnum 
-    2.3.7 :03 > y = 1_000_000_000_000_000_000_000_000_000
-         => 1000000000000000000000000000 
-    2.3.7 :04 > y.class
-        => Bignum 
-
-
 ## Saída e Padrão
 [Aula 03- Saida e entrada](praticando/03.rb)
 
@@ -100,21 +71,66 @@ EX:
     x.to_f ( Float )
 
 
-## Condicionais (if, unless, case)
-[Condicionais](/praticando/03.rb)
+## Condicionais (if, unless, case e estrutura condicional ternária)
+[Aula 04 - Condicionais](/praticando/03.rb)
 
--> if
-    -> 
-    
--> unless
--> case
+## Operadores Relacionais
+[Aula 05 - Relacionais](/praticando/05.rb)
 
+-> Operadores Relacionais e Aritméticos
+
+-> Relacionais
+    -> Maior ( > )
+    -> Menor ( < )
+    -> Maior igual ( >= )
+    -> Menor igual ( <= )
+    -> Igual ( == )
+    -> Diferente ( != )
+
+-> Aritméticos
+    -> Soma ( + )
+    -> Subtração ( - )
+    -> Multiplicação ( * )
+    -> Divisão ( / )
+    -> Potência ( ** )
+    -> Módulo - Resto da divisão ( % )
+
+
+=======================================================
 ## Comandos e informações
-[pry](/pry.txt)
-[IRB](/IRB.txt)
-[comandos_rvm](/comandos_rvm.txt)
+[pry](/arquivos/pry.txt)
+[IRB](/arquivos/IRB.txt)
+[comandos_rvm](/arquivos/comandos_rvm.txt)
 
 ## Aulas
 [Aula 01-puts](praticando/01.rb)
 [Aula 02-variáveis](praticando/02.rb)
 [Aula 03-Inserção e Coerção de dados](praticando/03.rb)
+=======================================================
+
+## Versões Ruby 2.3 vs 2.4+
+
+-> 2.3
+    Fixnum representa os inteiros
+    Bignum representa os números "inteiros gigantes"
+
+-> 2.4+
+    Interge representa todos os números inteiros
+
+EX:
+-> Underline para ver quantos zeros
+-> Versão 2.7.2
+    2.7.2 :001 > w = 1_000_000 
+     => 1000000 
+    2.7.2 :002 > w.class
+        => Integer 
+    
+-> Versão 2.3.7
+    2.3.7 :01 > x = 1
+         => 1 
+    2.3.7 :02 > x.class
+        => Fixnum 
+    2.3.7 :03 > y = 1_000_000_000_000_000_000_000_000_000
+         => 1000000000000000000000000000 
+    2.3.7 :04 > y.class
+        => Bignum 
