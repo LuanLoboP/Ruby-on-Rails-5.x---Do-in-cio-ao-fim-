@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 IRB – Comandos Essenciais
-=======
-- IRB = REPL, prompt para escrever o algoritimo da linguagem
->>>>>>> 7446891bff31ce5343c51d5eb24db0d3021de551
 
 -> O que é o IRB?
 

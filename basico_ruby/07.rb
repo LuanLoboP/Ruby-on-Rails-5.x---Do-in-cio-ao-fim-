@@ -28,4 +28,11 @@ puts x[0] # Vai retornar 15
 # end 
 
 puts "=================="
-
+# Array 
+a = [[ 11, 12, 13], [21, 22, 23], [31, 32, 33]]
+    # Podemos usar o each para iterar
+a.each do |externo|
+    externo.each do |interno|
+    puts interno
+    end
+end
