@@ -185,13 +185,15 @@ puts a.[0] # Primeiro item do array
 -> Arrays podem ser aninhados: 
   EX:
   ``` ruby
-      a = [ [ 11, 12, 13], [21,22,23], 31,32,33 ]
+      a = [ [ 11, 12, 13], [21,22,23], [31,32,33] ]
       # Podemos usar o each para iterar
       a.each do |externo|
         externo.each do |interno|
           puts interno
       end
   ```
+
+---
 
 ### Hashes 
 [Aula 08 - Hashes](/basico_ruby/08.rb)
@@ -207,7 +209,8 @@ puts a.[0] # Primeiro item do array
       h["Curso"]
   ```
   -> Em um hash você determina qual é a "chave" para acesar o valor
-  ---
+
+---
 
 ### Strings, Concatenação e Interpolação de Variáveis
 [Aula 09- Strings](/basico_ruby/09.rb)
@@ -286,26 +289,61 @@ EX:
   ```
   -> Apenas strings criadas com aspas duplas são interpoláveis
 
+---
 
 ### Simbolos / Symbols
 [Aula 10 - Simbolos](/basico_ruby/10.rb)
 
--> Símbolos são "string imutáveis"
+-> Símbolos são **"string imutáveis"**
 
 EX:
+  -> Todas são mesmo nome, porém locais diferentes na memória
   ``` ruby
-puts "Luan".object_id
-puts "Luan".object_id
-puts "Luan".object_id
-puts "Luan".object_id
+  puts "Luan".object_id # 60
+  puts "Luan".object_id # 80
+  puts "Luan".object_id # 100
+  puts "Luan".object_id # 120
   ```
 
+  -> Já aqui, apenas um local da memória, mesmo repetindo o objeto, ele não é alocado em um novo local de memória
+  ``` ruby 
+  puts :Luan.object_id # 1024228
+  puts :Luan.object_id # 1024228
+  puts :Luan.object_id # 1024228
+  puts :Luan.object_id # 1024228
+  ```
 
+-> Símbolos são muitos usados em situações onde precisamos de um identificador, pois eles garantem que seu uso não implicará na criação de novos objetos sempre que usados.
+-> Hashes adoram símbolos: 
+  EX:
+  ``` ruby 
+  h = {:curso => "Rails" } # Fórmula antiga
+  h = {curso: "Rayls" } # Fórmula nova
+  h = {curso : "Rails"} 
+  ```
+-> Na nova notação, posso usar **{ curso: "Rails" }**, este **curso:** o ruby entende como simbolo também, diferente de **{ curso : "Rails" }**  
 
+--- 
 
+## Sobre Parênteses e Constantes
+[Complemento Aula 01 - Parênteses e Constantes](/basico_ruby/01.rb)
 
-
-
+-> No Ruby o uso de **parênteses é opcional**: 
+  EX:
+``` ruby 
+  puts ("Curso Rails")
+  puts "Curso Rails"
+```
+-> **Contantes** são usadas para representar valores
+  EX: 
+  ``` ruby
+  NOME = "Luan"
+  PI = 3.14
+  puts NOME 
+  puts PI
+  ``` 
+  -> Uma **Variável** pode ser alterada, varia de valor
+  -> Uma **Contante** é imutável, declara com letra *MAIÚSCULA*
 
 ## Comandos e Ferramentas
 
