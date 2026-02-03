@@ -270,7 +270,7 @@ EX:
   ``` ruby 
   x = "curso"
   puts x.object_id # id do objeto
-  x = x + "rails"
+  x = x << "rails"
   puts x
   puts x.object_id # id do objeto
 
