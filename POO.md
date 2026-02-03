@@ -5,6 +5,7 @@
 - [Aula 01 - Classes vs Objetos](/POO_ruby/01.rb) 
 - [Aula 02 - Classes e Métodos](/POO_ruby/02.rb)
 - [Aula 03 - Parâmetros e Initialize ](/POO_ruby/03.rb)
+- [Aula 04 - Self, instância e Accessors](/POO_ruby/04.rb)
 
 
 
