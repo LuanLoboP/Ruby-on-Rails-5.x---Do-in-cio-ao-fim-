@@ -47,7 +47,7 @@
 ## Criando Classes e Métodos
 [Aula 02 - Classes e Métodos](/POO_ruby/02.rb)
 
--> **Lembrese** => Uma classe instanciada é um objeto! 
+-> **Lembre-se** => Uma classe instanciada é um objeto! 
 -> Ou seja **instanciar uma classe é criar um objeto baseado nela, com seu próprio estado e comportamento.**
 
 -> Duas formas de instanciar uma classe
@@ -62,13 +62,14 @@
 ``` 
 
 -> **Como criar um classe ?** 
-    -> Crie um arquivo *pessoa.rb*
-``` ruby 
+    -> Crie um arquivo *pessoa.rb*, por exemplo
+``` ruby
+    # Dentro do arquivo, escreva a palavra reservada (*class*), depois o nome da classe, primeira letra maiúscula
     class Pessoa 
     end
 ``` 
--> A *classe* sempre começa com *letra maiúscula* (capitulada) 
--> **Nomes compostos devem capitular devem capitular o início de cada palavra**. 
+-> A *classe* sempre começa com *letra maiúscula* 
+-> **Nomes compostos devem capitular o início de cada palavra**. 
     EX: 
 ``` ruby 
     PessoaFisica 
@@ -102,7 +103,7 @@ EX:
     -> É a forma de passar dados para dentro do método 
     EX: 
 ``` ruby 
-    def falar(texto)
+    def falar(texto) # Método falar, parâmetro texto
         "Olá!, #{texto}" 
     end
 ```  
@@ -117,13 +118,13 @@ EX:
     -> Da para usar mais de um parâmetro 
     EX: 
 ``` ruby 
-    def falar(texto = "Hello", texto2 = "Hello!")
+    def falar(texto = "Hello", texto2 = "World!")
         "#{texto} #{texto2}"
     end
 ```  
 
 -> **Método initialize** 
-    -> O método `initialize` é um método especial que define o que o   *objeto* deve fazer no momento em que a classe é instanciada.
+    -> O método `initialize` é um método especial que define o que o que *objeto* deve fazer no momento em que a classe é instanciada.
     -> Ele é *executado automaticamente* sempre que um novo objeto é criado.
     EX: 
 ``` ruby 
