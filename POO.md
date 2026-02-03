@@ -28,7 +28,7 @@
     EX:
     -> Acelera , freia, liga o farol , buzina ...
 
--> Os *atributos* são *características* ( **de uma carro** )
+-> Os *atributos* são *características* ( **de um carro** )
     EX: 
     -> Cor cinza, possui pneus aro 13, faróis, volante ...
 
